@@ -1,0 +1,23 @@
+#!/bin/bash
+
+i=1
+while [ true ];
+do
+    x=0
+    while [ $x -lt $i ]; 
+    do
+        printf "%s" "Laughed at \""
+	((x++))
+    done
+    printf "%s" "Maybe yall type out your feelings in strangely worded text"
+    x=0
+    while [ $x -lt $i ];
+    do
+	printf "%s" "\""
+	((x++))
+    done
+    printf "\n"
+    ((i++))
+    sleep .3
+done
+
